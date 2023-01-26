@@ -8,7 +8,7 @@ This script will be useful at the end of a pentest to steal data when otherwise 
 We let our sniffer listen.
 
 ``` python
-python3 icmp_exfiltration.py &> /dev/null
+python3 icmp_exfiltration.py 2> /dev/null
 ```
 
 ```bash
